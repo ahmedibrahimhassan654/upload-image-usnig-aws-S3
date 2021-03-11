@@ -1,11 +1,8 @@
-# DevCamper API
+# Interview assignment 
 
 * Create an API to enable system users to securely upload images provided that they are 
 authenticated.
 
-## Usage
-
-Interview assignment 
 
 
 
