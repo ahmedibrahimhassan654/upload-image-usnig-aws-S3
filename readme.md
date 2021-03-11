@@ -18,8 +18,10 @@ endpoints:
   ANY - https://qttli3q1aa.execute-api.us-east-1.amazonaws.com/production
 
 
-• The images stored into AWS S3 
+• The images stored into AWS S3 if the user is authorized
 
+
+• register and login user api
 
 •  securing  APIs 
 
