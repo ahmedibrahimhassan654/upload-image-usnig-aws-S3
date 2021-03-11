@@ -1,10 +1,29 @@
 # DevCamper API
 
-> Backend API for DevCamper application, which is a bootcamp directory website
+> Create an API to enable system users to securely upload images provided that they are 
+authenticated.
 
 ## Usage
 
-Rename "config/config.env.env" to "config/config.env" and update the values/settings to your own
+Interview assignment 
+
+
+
+#required and installed 
+• The API  written using Nodejs & express js & mongo db .
+
+• - The API  deployable to AWS Lambda 
+
+endpoints:
+  ANY - https://qttli3q1aa.execute-api.us-east-1.amazonaws.com/production/{proxy+}
+  ANY - https://qttli3q1aa.execute-api.us-east-1.amazonaws.com/production
+
+
+• - The images stored into AWS S3 
+
+
+• - Think about security while developing you APIs 
+• - Create a GitHub repository with your projec
 
 ## Install Dependencies
 
@@ -21,24 +40,21 @@ npm run dev
 # Run in prod mode
 npm start
 ```
+#Run ap in deployment mode with aws
 
-## Database Seeder
+npm run deploy
 
-To seed the database with users, bootcamps, courses and reviews with data from the "\_data" folder, run
 
-```
-# Destroy all data
-node seeder -d
-
-# Import all data
-node seeder -i
-```
 
 ## Demo
 
-The API is live at [devcamper.io](https://devcamper.io)
+API Lambda function end point 
 
-Extensive documentation with examples [here](https://documenter.getpostman.com/view/8923145/SVtVVTzd?version=latest)
+endpoints:
+  ANY - https://qttli3q1aa.execute-api.us-east-1.amazonaws.com/production/{proxy+}
+  ANY - https://qttli3q1aa.execute-api.us-east-1.amazonaws.com/production
+
+Extensive documentation with examples [here](https://documenter.getpostman.com/view/7173620/Tz5p6dMb)
 
 - Version: 1.0.0
 - License: MIT

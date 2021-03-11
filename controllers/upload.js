@@ -22,19 +22,14 @@ exports.upload = asyncHandler(async (req, res, next) => {
         return next(new ErrorResponse(`Please upload a file`, 400));
       }
     
-     
-
-    //    contentType=file.mimetype
-
-    
-
-
        const params = {
         Bucket: 'upload-image-1', 
         Key: key, 
         Expires: 60, 
         ResponseContentType: 'image/png'
       };
+
+
 
       
       s3.getSignedUrl('getObject', params, async (err, url) =>{
