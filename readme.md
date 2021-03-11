@@ -24,7 +24,7 @@ endpoints:
 • The images stored into AWS S3 
 
 
-•  securing API APIs 
+•  securing  APIs 
 
 - prevent nosql injection sanitize data 
 - xss protection security headers
