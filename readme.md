@@ -1,6 +1,6 @@
 # DevCamper API
 
-> Create an API to enable system users to securely upload images provided that they are 
+* Create an API to enable system users to securely upload images provided that they are 
 authenticated.
 
 ## Usage
@@ -9,21 +9,36 @@ Interview assignment
 
 
 
-#required and installed 
-• The API  written using Nodejs & express js & mongo db .
+## required and installed 
 
-• - The API  deployable to AWS Lambda 
+• The API  written using Nodejs & express js & mongo db 
+
+
+•  The API  deployable to AWS Lambda 
 
 endpoints:
-  ANY - https://qttli3q1aa.execute-api.us-east-1.amazonaws.com/production/{proxy+}
+ 
   ANY - https://qttli3q1aa.execute-api.us-east-1.amazonaws.com/production
 
 
-• - The images stored into AWS S3 
+• The images stored into AWS S3 
 
 
-• - Think about security while developing you APIs 
-• - Create a GitHub repository with your projec
+•  securing API APIs 
+
+- prevent nosql injection sanitize data 
+- xss protection security headers
+- rate limiting ,hpps cors
+- create git ignore file and add all major securtiy file befour deploy in github
+
+•  Create a GitHub repository with your projec
+
+- https://github.com/ahmedibrahimhassan654/upload-image-usnig-aws-S3
+
+
+## Documentation 
+
+Extensive documentation with examples [here](https://documenter.getpostman.com/view/7173620/Tz5p6dMb)
 
 ## Install Dependencies
 
@@ -35,26 +50,18 @@ npm install
 
 ```
 # Run in dev mode
+
 npm run dev
 
 # Run in prod mode
+
 npm start
-```
-#Run ap in deployment mode with aws
+
+#Run app in deployment mode with aws
 
 npm run deploy
 
 
-
-## Demo
-
-API Lambda function end point 
-
-endpoints:
-  ANY - https://qttli3q1aa.execute-api.us-east-1.amazonaws.com/production/{proxy+}
-  ANY - https://qttli3q1aa.execute-api.us-east-1.amazonaws.com/production
-
-Extensive documentation with examples [here](https://documenter.getpostman.com/view/7173620/Tz5p6dMb)
 
 - Version: 1.0.0
 - License: MIT
