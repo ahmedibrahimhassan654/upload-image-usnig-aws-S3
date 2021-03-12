@@ -19,6 +19,7 @@ endpoints:
 
 
 • The images stored into AWS S3 if the user is authorized
+  and store URL image in mongo db as Json 
 
 
 • register and login user api
