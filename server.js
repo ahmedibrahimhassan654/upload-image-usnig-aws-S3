@@ -5,34 +5,49 @@
  * @see <a href="https://github.com/ahmedibrahimhassan654">Git hub profile</a>
  */
 
-/**
- * student Name
- * @type {string}
- */
+
 const path = require('path');
 
 /**
- * array of grade
- * @type {Array}
+ * express Frame work npm imported
+ * @type {NPM}
  */
 const express = require('express');
 const dotenv = require('dotenv');
 
 /**
- * array of grade
- * @type {Array}
+ * import morgan npm for development purpose 
+ * @type {NPM}
  */
 const morgan = require('morgan');
 const colors = require('colors');
 
 const cookieParser = require('cookie-parser');
 const mongoSanitize = require('express-mongo-sanitize');
+/**
+ * helmet for Secure ExpressJS Application 
+ * @type {NPM}
+ */
 const helmet = require('helmet');
+/**
+ * xss for Secure ExpressJS Application (avoid XSS Attacks)
+ * @type {NPM}
+ */
 const xss = require('xss-clean');
 const rateLimit = require('express-rate-limit');
 const hpp = require('hpp');
 const cors = require('cors');
+
+/**
+ * TO mange error response 
+ * @type {Error-midleware}
+ */
 const errorHandler = require('./middleware/error');
+
+/**
+ * connect with mongo db 
+ * @type {string}
+ */
 const connectDB = require('./config/db');
 
 
@@ -45,8 +60,15 @@ dotenv.config({ path: './config/config.env' });
 connectDB();
 
 //Route files
-
+/**
+ * import auth route
+ * @type {Route}
+ */
 const auth = require('./routes/auth');
+/**
+ * import users route
+ * @type {Route}
+ */
 const users = require('./routes/users');
 
 const upload=require('./routes/uploade')
