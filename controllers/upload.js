@@ -43,7 +43,7 @@ exports.upload = asyncHandler(async (req, res, next) => {
            * @typedef {Object} params
            * @property {string} Bucket -aws bucket used to upload file inside it 
            * @property {date} Expires -Image url generated url expire 
-           * @property {string} key -key will used with front end 
+           * @property {string} key - key for aws bucket
            * @property {string} ResponseContentType -the file type to uploade is image/png
            */
        const params = {
