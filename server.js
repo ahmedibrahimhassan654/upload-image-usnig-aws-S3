@@ -1,14 +1,27 @@
 
 /**
- * @file server.js is the root  app
+ * @file server is the root  app
  * @author Ahmed ibrahim
  * @see <a href="https://github.com/ahmedibrahimhassan654">Git hub profile</a>
  */
 
-
+/**
+ * student Name
+ * @type {string}
+ */
 const path = require('path');
+
+/**
+ * array of grade
+ * @type {Array}
+ */
 const express = require('express');
 const dotenv = require('dotenv');
+
+/**
+ * array of grade
+ * @type {Array}
+ */
 const morgan = require('morgan');
 const colors = require('colors');
 

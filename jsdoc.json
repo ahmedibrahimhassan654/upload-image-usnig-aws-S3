@@ -1,6 +1,6 @@
 {
     "source": {
-      "include": ["server.js"],
+      "include": ["server.js","./controllers"],
       "includePattern": ".js$",
       "excludePattern": "(node_modules/|docs)"
     },
@@ -11,7 +11,8 @@
     },
     "opts": {
       "recurse": true,
-      "destination": "./docs/"
+      "destination": "./docs/",
+      "template":"default"
     
     }
   }
