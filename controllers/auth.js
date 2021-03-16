@@ -24,7 +24,7 @@ const User = require('../models/User');
  */
 exports.register = asyncHandler(async (req, res, next) => {
   //for mock user model in test
-  User.create()
+  User.create(req.body)
 
   
 
