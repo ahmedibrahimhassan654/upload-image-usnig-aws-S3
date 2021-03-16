@@ -25,5 +25,13 @@ describe('register new user',()=>{
         register(req,res,next)
         expect(User.create).toBeCalledWith(newRegister)
     })
+
+    it('should return 200 respond code',()=>{
+      
+        req.body=newRegister
+        register(req,res,next)
+        expect(res.statusCode).toBe(200)
+        expect(res._isEndCalled()).toBeTruthy()
+    })
 })
 

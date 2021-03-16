@@ -40,6 +40,8 @@ exports.register = asyncHandler(async (req, res, next) => {
   // //function 
 
   // sendTokenResponse(user, 200, res);
+  
+  res.status(200).send()
 });
 
 // @desc      Login user
@@ -57,6 +59,8 @@ exports.register = asyncHandler(async (req, res, next) => {
 
  
  */
+
+
 exports.login = asyncHandler(async (req, res, next) => {
   const { email, password } = req.body;
 
