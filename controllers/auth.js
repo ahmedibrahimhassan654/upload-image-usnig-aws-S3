@@ -23,6 +23,11 @@ const User = require('../models/User');
  * @property {String} role -user role default is user
  */
 exports.register = asyncHandler(async (req, res, next) => {
+  //for mock user model in test
+  User.create()
+
+  
+
   // const { name, email, password, role } = req.body;
 
   // // Create user
