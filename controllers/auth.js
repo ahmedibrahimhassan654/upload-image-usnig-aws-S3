@@ -39,9 +39,9 @@ exports.register = asyncHandler(async (req, res, next) => {
   });
   // //function 
 
-   sendTokenResponse(user, 200, res);
+  //  sendTokenResponse(user, 200, res);
   
-  // res.status(200).json(user)
+res.status(200).json(user)
 });
 
 // @desc      Login user
