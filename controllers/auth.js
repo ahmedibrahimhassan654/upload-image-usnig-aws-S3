@@ -28,20 +28,20 @@ exports.register = asyncHandler(async (req, res, next) => {
 
   
 
-  // const { name, email, password, role } = req.body;
+  const { name, email, password, role } = req.body;
 
-  // // Create user
-  // const user = await User.create({
-  //   name,
-  //   email,
-  //   password,
-  //   role
-  // });
+  // Create user
+  const user = await User.create({
+    name,
+    email,
+    password,
+    role
+  });
   // //function 
 
-  // sendTokenResponse(user, 200, res);
+   sendTokenResponse(user, 200, res);
   
-  res.status(200).send()
+  // res.status(200).json(user)
 });
 
 // @desc      Login user
@@ -228,7 +228,6 @@ exports.resetPassword = asyncHandler(async (req, res, next) => {
 const sendTokenResponse = (user, statusCode, res) => {
   // Create token
   const token = user.getSignedJwtToken();
-
   const options = {
     expires: new Date(
       Date.now() + process.env.JWT_COOKIE_EXPIRE * 24 * 60 * 60 * 1000
@@ -245,6 +244,7 @@ const sendTokenResponse = (user, statusCode, res) => {
     .cookie('token', token, options)
     .json({
       success: true,
+
       token
     });
 };

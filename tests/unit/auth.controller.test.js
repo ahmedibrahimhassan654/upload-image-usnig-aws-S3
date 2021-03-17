@@ -33,5 +33,10 @@ describe('register new user',()=>{
         expect(res.statusCode).toBe(200)
         expect(res._isEndCalled()).toBeTruthy()
     })
+    // it('should return json body in response',()=>{
+    //      User.create.mockReturnValue(newRegister)
+    //      register(req,res,next)
+    //      expect(res._getJSONData()).toStrictEqual(newRegister)
+    // })
 })
 
