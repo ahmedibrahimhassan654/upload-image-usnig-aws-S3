@@ -38,7 +38,15 @@ endpoints:
 
 ## Documentation 
 
+*Document api by post man 
+
 Extensive documentation with examples [here](https://documenter.getpostman.com/view/7173620/Tz5p6dMb)
+
+
+*Document API by Js doc 
+
+-open docs folder in the root of app ,open inex.html file 
+
 
 ## Install Dependencies
 
@@ -60,6 +68,11 @@ npm start
 #Run app in deployment mode with aws
 
 npm run deploy
+
+
+#Run app in test  mode with jest
+
+npm run test
 
 
 
